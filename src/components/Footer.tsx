@@ -18,7 +18,7 @@ const socialNetworks = [
 ]
 
 export default function () {
-    return <div className="min-h-30  opacity-70 items-center justify-around flex">
+    return <div className="min-h-30 opacity-70 items-center justify-between  z-50  backdrop-blur-xs px-20 flex">
         <div className="flex items-center gap-4 justify-around">
             {socialNetworks.map(e => e.icon)}
         </div>

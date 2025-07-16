@@ -2,8 +2,6 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import { HeroUIProvider } from "@heroui/react";
-import { RouterProvider } from 'react-router-dom';
-import router from './router.tsx';
 import AppRouter from './router.tsx';
 
 window.document.body.classList.add("dark")
