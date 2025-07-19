@@ -5,26 +5,12 @@ import Footer from "./components/Footer";
 import Illustrations from "./pages/Illustrations";
 import Admin from "./pages/Admin";
 import backgroundImage from './assets/background.png'
+import AboutMe from "./pages/AboutMe";
 
 const Layout = () => {
   return (
     <>
-      <div
-        className="absolute z-[-1] inset-0 bg-repeat bg-center"
-        style={{
-          backgroundImage: `url('${backgroundImage}')`,
-          backgroundSize: '106%',
-          opacity: 0.12,
-          zIndex: 0,
-        }}
-      />
-      <div className="flex flex-col min-h-screen">
-        <Navbar />
-        <main className="flex-grow">
-          <Outlet />
-        </main>
-        <Footer />
-      </div>
+      <Outlet />
     </>
   );
 };
@@ -36,6 +22,7 @@ export default function AppRouter() {
         <Route path="/" element={<Layout />}>
           <Route index element={<Home />} />
           <Route path="illustrations" element={<Illustrations />} />
+          <Route path="aboutMe" element={<AboutMe />} />
         </Route>
         <Route path="admin" element={<Admin />} />
       </Routes>

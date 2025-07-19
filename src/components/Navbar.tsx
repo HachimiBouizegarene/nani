@@ -3,7 +3,7 @@ import logo from "../assets/logo.png"
 const sections = [
     { name: 'Chara Desing', path: '/' },
     { name: 'Illu', path: '/illustrations' },
-    { name: 'About Me', path: '/about-me' }
+    { name: 'About Me', path: '/aboutMe' }
 ]
 
 export default function () {

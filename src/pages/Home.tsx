@@ -1,5 +1,7 @@
 
 import { Image } from "@heroui/react"
+import Navbar from "../components/Navbar"
+import Footer from "../components/Footer"
 
 const images = [
     'https://images.squarespace-cdn.com/content/v1/5a88864349fc2b8e071336f8/1741914254873-B8S1H8PU7QQJPU91JR2G/2025_portfolio_short1.jpg?format=1500w',
@@ -11,12 +13,15 @@ function Home() {
 
     return (
         <>
+            <Navbar />
             <div className="w-full flex gap-10 flex-col items-center pt-10 justify-center">
                 {images.map(src => (
                     <Image src={src} radius="none" isBlurred isZoomed />
                 ))}
 
             </div>
+
+            <Footer />
 
         </>
     )
