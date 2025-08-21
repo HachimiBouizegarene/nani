@@ -2,7 +2,7 @@ import { Link, useLocation } from "react-router-dom"
 import logo from "../assets/logo.png"
 const sections = [
     { name: 'Chara Desing', path: '/' },
-    { name: 'Illu', path: '/illustrations' },
+    { name: 'Illustrations', path: '/illustrations' },
     { name: 'About Me', path: '/aboutMe' }
 ]
 
@@ -18,8 +18,8 @@ export default function () {
             {sections.map(section => <Link
                 key={section.path}
                 to={section.path}
-                className={`font-bold tracking-wider transition-all   ${location.pathname === section.path ? 'text-white text-2xl ' :
-                    'text-zinc-300  text-lg hover:text-xl hover:text-zinc-600'
+                className={`font-bold tracking-wider transition-all   ${location.pathname === section.path ? 'text-yellow-300 text-5xl ' :
+                    'text-zinc-300  text-lg hover:text-3xl '
                     }`}>
                 {section.name}
             </Link>)}

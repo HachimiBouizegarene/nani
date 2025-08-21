@@ -1,7 +1,9 @@
 import { PiXLogoBold } from "react-icons/pi";
 import { IoLogoInstagram } from "react-icons/io5";
 import { FaArtstation } from "react-icons/fa";
-import { Link } from "react-router-dom";
+import { Link, useNavigation } from "react-router-dom";
+import { Button } from "@heroui/react";
+import { NavLink, useNavigate } from "react-router";
 const socialNetworks = [
     {
         icon: <PiXLogoBold className="!text-zinc-200" size={25} />,
@@ -18,9 +20,12 @@ const socialNetworks = [
 ]
 
 export default function () {
+
+    let navigate = useNavigate();
+
     return <div className="min-h-30 opacity-70 items-center justify-between  z-50  backdrop-blur-xs px-20 flex">
         <div className="flex items-center gap-4 justify-around">
-            {socialNetworks.map(e => e.icon)}
+            {socialNetworks.map(e => <Button onPress={()=>window.open('https://www.google.fr', '_blank')} isIconOnly color="default" variant="light">{e.icon}</Button>)}
         </div>
         <p className="text-lg  rounded-2xl p-2 px-10 text-white font-bold tracking-wider ">nina.mohammedi@outlook.fr</p>
         <div className="flex gap-2">
