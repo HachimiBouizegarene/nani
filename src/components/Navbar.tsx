@@ -1,7 +1,7 @@
 import { Link, useLocation } from "react-router-dom"
 import logo from "../assets/logo.png"
 const sections = [
-    { name: 'Chara Desing', path: '/' },
+    { name: 'Chara Design', path: '/' },
     { name: 'Illustrations', path: '/illustrations' },
     { name: 'About Me', path: '/aboutMe' }
 ]
