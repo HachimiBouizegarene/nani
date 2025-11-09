@@ -8,7 +8,7 @@ window.document.body.classList.add("dark")
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
     <HeroUIProvider>
-      <div className='flex flex-col relative w-screen h-screen overflow-auto bg-black'>
+    <div className='flex flex-col relative w-screen h-screen overflow-auto bg-zinc-100'>
           <AppRouter />
       </div>
     </HeroUIProvider>
